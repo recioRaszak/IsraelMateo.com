@@ -165,13 +165,17 @@
 		}
 
 
-		.background-size {background-size:auto 115%!important;}
-		.hero.background-size {background-size:auto 145%!important;}
+		
 
 		.more,
 		.less {top:96%;color:rgba(255,255,255,0.33);}
 
 
+	}
+
+	@media (orientation:portrait) {
+		.background-size {background-size:auto 115%!important;}
+		.hero.background-size {background-size:auto 145%!important;}
 	}
 
 	@media (max-width:1275px) {
@@ -246,7 +250,7 @@
 	</section>
 
 	<section id="work" class="work background-size uk-text-center ">
-		<div class="uk-container uk-container-center work-content gallery">
+		<article class="uk-container uk-container-center work-content gallery">
 			<br><br>
 			<h2 class="uk-text-center uk-width-1-1 big-title uk-text-contrast">Proyectos recientes</h2>
 			
@@ -298,21 +302,27 @@
 					</a>
 				</figure>
 
-				
-
-				
-
 				<figure class="uk-width-1-2 uk-width-small-1-4 uk-width-medium-1-4">
+					<a href="img/screens/key.jpg" data-caption="<strong>Agencia:</strong> MejorConWeb. <strong>Proyecto:</strong> Key Consulting <strong>URL:</strong> <a href='http://www.keyconsulting.cat/' target='blank'>keyconsulting.cat</a>">
+						<img src="img/screens/thumbs/key.jpg" alt="Key Consulting"/>
+					</a>
+				</figure>
+
+				
+
+				
+
+				<!-- <figure class="uk-width-1-2 uk-width-small-1-4 uk-width-medium-1-4">
 					<a href="img/screens/monturiol.jpg" data-caption="<strong>Agencia:</strong> MejorConWeb. <strong>Proyecto:</strong> Institut Narcís Monturiol <strong>URL:</strong> <a href='http://www.narcismonturiol.cat' target='blank'>http://www.narcismonturiol.cat</a>">
 						<img src="img/screens/thumbs/monturiol.jpg" alt="Institut Narcís Monturiol"/>
 					</a>
-				</figure>
+				</figure> -->
 
 			</div>
 
 
 
-		</div>
+		</article>
 		<br>
 		<br>
 	</section>
