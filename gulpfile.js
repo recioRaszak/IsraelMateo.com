@@ -5,7 +5,7 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   autoprefixer = require('gulp-autoprefixer'),
-  minify = require('gulp-minify'),
+  minifyCSS = require('gulp-minify-css'),
   uncss = require('gulp-uncss');
 
 /*
@@ -34,6 +34,6 @@ gulp.task('magiacss', function () {
   gulp.src(['app/css/uikit.uncss.css', 'app/css/custom.css','app/css/baguetteBox.min.css'])
   .pipe(concat('all.css'))
   .pipe(autoprefixer())
-  .pipe(minify())
+  .pipe(minifyCSS({keepBreaks:false}))
   .pipe(gulp.dest('dist/css/'))
 });

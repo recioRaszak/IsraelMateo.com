@@ -180,7 +180,7 @@ h1, h2 {
   text-decoration: underline!important;
 }
 
-.uk-text-extralarge .uk-button-ghost,
+.uk-text-extralarge.large,
   .uk-text-extralarge span {
   font-size: 150%;
   padding: 10px 30px;
@@ -252,13 +252,13 @@ ul.uk-active .uk-button-ghost:hover {
 }
 
 .translate {
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
+  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-100%,0,0);
 }
 
 .translatePlus {
-  transform: translateX(-110%);
-  -webkit-transform: translateX(-110%);
+  transform: translate3d(-110%,0,0);
+  -webkit-transform: translate3d(-110%,0,0);
 }
 
 .escribeme:after {
@@ -277,6 +277,9 @@ ul.uk-active .uk-button-ghost:hover {
   position: absolute;
   top: -60px;
 }
+
+.circle {height:0;position:relative;padding:100% 0 0 0;box-sizing:padding-box;background:rgba(0,0,0,0.8);}
+.circle-content {position:absolute;left:0;right:0;top:0;bottom:0;height:7em;z-index:1;margin:auto;}
 
 footer {
   background: #333;
