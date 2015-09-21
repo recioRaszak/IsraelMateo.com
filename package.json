@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/recioRaszak/IsraelMateo.com/issues"
   },
-  "homepage": "http://www.israelMateo.com"
+  "homepage": "http://www.israelMateo.com",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-uncss": "^1.0.3"
+  }
 }
