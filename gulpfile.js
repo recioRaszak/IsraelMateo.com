@@ -1,6 +1,4 @@
-/*
-* Dependencias
-*/
+
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
@@ -8,9 +6,6 @@ var gulp = require('gulp'),
   minifyCSS = require('gulp-minify-css'),
   uncss = require('gulp-uncss');
 
-/*
-* Configuración de la tarea 'demo'
-*/
 gulp.task('magiajs', function () {
   gulp.src(['app/js/uikit.min.js', 'app/js/sticky.js', 'app/js/parallax.js', 'app/js/baguetteox.min.js'])
   .pipe(concat('todo.js'))
@@ -18,20 +13,9 @@ gulp.task('magiajs', function () {
   .pipe(gulp.dest('dist/js/'))
 });
 
-gulp.task('uncss', function() {
-  return gulp.src([
-      'app/css/uikit.css'
-    ])
-    .pipe(uncss({
-      html: [
-        'dist/index.html'
-      ]
-    }))
-    .pipe(gulp.dest('dist/css/'));
-});
-
 gulp.task('magiacss', function () {
-  gulp.src(['app/css/uikit.uncss.css', 'app/css/custom.css','app/css/baguetteBox.min.css'])
+  gulp.src(['app/css/uikit.css', 'app/css/custom.css','app/css/baguetteBox.min.css'])
+  .pipe(uncss({html: ['dist/index.html']}))
   .pipe(concat('all.css'))
   .pipe(autoprefixer())
   .pipe(minifyCSS({keepBreaks:false}))
