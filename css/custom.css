@@ -1,0 +1,410 @@
+html {
+  font-size: 100%;
+  line-height: 150%;
+  font-family: Arvo, Garamond, Georgia, 'Times new Roman', times, serif;
+}
+
+body {
+  background: #16a085;
+}
+
+a {
+  color: #16a085;
+} /*  */
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.uk-vertical-align-bottom, .uk-vertical-align-middle {
+  font-size: 1.05rem;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', 'courier new', courier, monospace;
+  font-weight: normal;
+}
+
+.big-title {
+  margin: 20px 0 60px 0;
+  font-size: 250%;
+  line-height: 120%;
+  color: #16a085;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.01),
+      -2px -2px 0 rgba(0,0,0,0.01),
+      -3px -3px 0 rgba(0,0,0,0.01),
+
+          1px 1px 0 rgba(255,255,255,0.3),
+          2px 2px 0 rgba(0,0,0,0.01),
+          3px 3px 0 rgba(0,0,0,0.01),
+          4px 4px 0 rgba(0,0,0,0.01),
+          5px 5px 0 rgba(0,0,0,0.01),
+          6px 6px 0 rgba(0,0,0,0.01),
+          7px 7px 0 rgba(0,0,0,0.01),
+          8px 8px 0 rgba(0,0,0,0.01),
+          9px 9px 0 rgba(0,0,0,0.01),
+          10px 10px 0 rgba(0,0,0,0.01);
+}
+
+.leading {
+  font-size: 150%;
+  line-height: 120%;
+  color: #16a085;
+}
+
+.hero {
+  background: url(img/ca-l-arnus-badalona.jpg) center no-repeat;
+}
+
+.work {
+  background: #16a085;
+}
+
+.about {
+  background: url(img/kid.jpg) center  no-repeat black;
+}
+
+.contact {
+  background: url(img/myselfbw.jpg) center no-repeat #274539;
+}
+
+.uk-text-shadow {
+  text-shadow: 0 0 5px rgba(0,0,0,0.5),
+                 0 0 15px rgba(0,0,0,0.5),
+                 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black;
+}
+
+.uk-text-small {
+  font-size: 8px;
+}
+
+.font-press-start {
+  font-family: 'Press Start 2P', 'courier new', courier, monospace;
+  font-weight: normal;
+}
+
+.font-crimson-text {
+  font-family: Arvo, Garamond, Georgia, 'Times new Roman', times, serif;
+  font-weight: normal;
+}
+
+.uk-text-uppercase {
+  text-transform: uppercase;
+}
+
+.logo-text {
+  font-size: 300%;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.logo-text .bit-bigger {
+  display: inline-block;
+  font-size: 122%;
+  transform: translateX(3px);
+}
+
+.fix-kern-1 {
+  letter-spacing: -0.1em;
+}
+
+.fix-kern-2 {
+  letter-spacing: -0.2em;
+}
+
+.llaves {
+  position: relative;
+}
+
+.llaves:before,
+  .llaves:after {
+  position: absolute;
+  top: -20px;
+  font-size: 300%;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+.llaves:before {
+  content: "{";
+  left: -50px;
+}
+
+.llaves:after {
+  content: "}";
+  right: -50px;
+}
+
+.uk-transition {
+  transition: 500ms;
+  -webkit-transition: 500ms;
+}
+
+.uk-button-ghost {
+  border-radius: 0;
+  border: 3px solid white;
+  background: rgba(0,0,0,0.6);
+  height: auto;
+  min-height: 0;
+  line-height: 250%;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+#baguetteBox-overlay .full-image figcaption {
+  padding: 15px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.8);
+  font-family: Arvo, Garamond, Georgia, 'Times new Roman', times, serif;
+}
+
+@media (min-width:768px) {
+  .uk-button-ghost {
+    min-width: 166px;
+  }
+}
+
+.uk-button-ghost:hover,
+  .uk-button-ghost:active,
+  .uk-button-ghost.uk-active {
+  background: white!important;
+  border-color: black!important;
+  color: black!important;
+}
+
+.uk-text-underline {
+  text-decoration: underline!important;
+}
+
+.uk-text-extralarge .uk-button-ghost,
+  .uk-text-extralarge span {
+  font-size: 150%;
+  padding: 10px 30px;
+  margin: 0 10px;
+}
+
+.uk-button-ghost i {
+  font-size: 125%;
+  margin-right: 5px;
+}
+
+header,
+  .uk-sticky-placeholder {
+  z-index: 1000;
+}
+
+ul.uk-active {
+  margin-left: 0!important;
+  z-index: 1000;
+} /* sticky grid fix */
+ul.uk-active .uk-button-ghost {
+  border-top: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+
+ul.uk-active .uk-button-ghost:hover {
+  opacity: .999;
+}
+
+.about-content {
+}
+
+.part-2 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  background: none;
+  padding: 15px;
+}
+
+.more,
+  .less {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  font-size: 250%;
+  margin: auto 15px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+}
+
+.more {
+  right: 0;
+}
+
+.less {
+  left: 0;
+}
+
+@media (min-width:1220px) {
+  .more,
+    .less {
+    margin: auto 30px;
+  }
+}
+
+.translate {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.translatePlus {
+  transform: translateX(-110%);
+  -webkit-transform: translateX(-110%);
+}
+
+.escribeme:after {
+  content: "contact@israelmateo.com";
+}
+
+.background-size {
+  background-size: 120% auto!important;
+}
+
+.hero.background-size {
+  background-size: auto 145%!important;
+}
+
+#actualidad {
+  position: absolute;
+  top: -60px;
+}
+
+footer {
+  background: #333;
+  padding: 15px;
+}
+
+@media (max-width:767px) {
+  .big-title {
+    font-size: 165%;
+  }
+
+  html {
+    font-size: 95%;
+  }
+
+  .uk-height-viewport {
+    height: auto!important;
+    max-height: 10000px!important;
+    padding-top: 90px;
+  }
+
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .hamburger {
+    font-size: 225%;
+    line-height: 100%;
+    display: inline-block;
+    margin: 10px 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: white;
+  }
+
+  .mainh1 {
+    max-width: 80%;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .llaves:before,
+      .llaves:after {
+    top: 20%;
+    font-size: 400%;
+  }
+
+  .llaves:before {
+    left: -40px;
+  }
+
+  .llaves:after {
+    right: -40px;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.65);
+    text-align: center;
+  }
+
+  .mobile-nav ul {
+  }
+
+  .uk-button-ghost {
+    min-width: 90%;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .uk-text-extralarge .uk-button-ghost, .uk-text-extralarge span {
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  .more,
+    .less {
+    top: 96%;
+    color: rgba(255,255,255,0.33);
+  }
+}
+
+@media (orientation:portrait) {
+  .background-size {
+    background-size: auto 115%!important;
+  }
+
+  .hero.background-size {
+    background-size: auto 145%!important;
+  }
+}
+
+@media (max-width:1275px) {
+  .uk-button + .uk-button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:767px) and (orientation:portrait) {
+  *[class*="uk-width-"] + *[class*="uk-width-"] + *[class*="uk-width-"] {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:767px) and (orientation:landscape) {
+  *[class*="uk-width-"] + *[class*="uk-width-"] + *[class*="uk-width-"] + *[class*="uk-width-"] + *[class*="uk-width-"] {
+    margin-top: 10px;
+  }
+}
+
+  /* animations utilities */
+
+.delay1 {
+  animation-delay: 350ms;
+  -webkit-animation-delay: 250ms;
+}
+
+.delay2 {
+  animation-delay: 700ms;
+  -webkit-animation-delay: 500ms;
+}
+
