@@ -54,11 +54,11 @@ h1, h2 {
 }
 
 .hero {
-  background: url(../img/ca-l-arnus-badalona.jpg) center no-repeat;
+  background: url(../img/legolike.jpg) center no-repeat;
 }
 
 .work {
-  background: #16a085;
+  background: url(../img/works.jpg) center / cover no-repeat #16a085;
 }
 
 .about {
