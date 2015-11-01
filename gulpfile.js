@@ -7,7 +7,7 @@ var gulp = require('gulp'),
   uncss = require('gulp-uncss');
 
 gulp.task('magiajs', function () {
-  gulp.src(['app/js/uikit.min.js', 'app/js/sticky.js', 'app/js/parallax.js', 'app/js/baguetteBox.min.js'])
+  gulp.src(['app/js/uikit.min.js', 'app/js/sticky.js', 'app/js/parallax.js', 'app/js/baguetteBox.min.js', 'app/js/smoothscroll.min.js'])
   .pipe(concat('todo.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/'))
